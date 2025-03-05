@@ -8,6 +8,7 @@ public class Main {
         System.out.println(inverterString("Java")); // Deve imprimir "avaJ"
         int[] numeros = {10, 20, 30};
         System.out.println(calcularMedia(numeros));
+        System.out.println(contarVogais("Java"));
         
     }
 
@@ -36,5 +37,15 @@ public class Main {
             soma += numero;
         }
         return (double) soma / numeros.length;
+}
+public static int contarVogais(String texto) {
+    int count = 0;
+    String vogais = "aeiouAEIOU";
+    for (char c : texto.toCharArray()) {
+        if (vogais.indexOf(c) != -1) {
+            count++;
+        }
+    }
+    return count;
 }
 }
