@@ -5,6 +5,7 @@ public class Main {
         System.out.println(ehPar(4)); // Deve imprimir true
         System.out.println(ehPar(7)); // Deve imprimir false
         System.out.println(fatorial(5)); // Deve imprimir 120
+        System.out.println(inverterString("Java")); // Deve imprimir "avaJ"
         
     }
 
@@ -23,5 +24,8 @@ public class Main {
             resultado *= i;
         }
         return resultado;
+        }
+        public static String inverterString(String texto) {
+            return new StringBuilder(texto).reverse().toString();
     }
 }
