@@ -6,6 +6,8 @@ public class Main {
         System.out.println(ehPar(7)); // Deve imprimir false
         System.out.println(fatorial(5)); // Deve imprimir 120
         System.out.println(inverterString("Java")); // Deve imprimir "avaJ"
+        int[] numeros = {10, 20, 30};
+        System.out.println(calcularMedia(numeros));
         
     }
 
@@ -28,4 +30,11 @@ public class Main {
         public static String inverterString(String texto) {
             return new StringBuilder(texto).reverse().toString();
     }
+    public static double calcularMedia(int[] numeros) {
+        int soma = 0;
+        for (int numero : numeros) {
+            soma += numero;
+        }
+        return (double) soma / numeros.length;
+}
 }
